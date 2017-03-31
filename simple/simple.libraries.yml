@@ -1,0 +1,25 @@
+primary:
+  version: 1.0.0
+  css:
+    base:
+      css/structure.css: {}
+      css/navigation.css: {}
+      css/slideshow.css: {}
+      css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+qs:
+  version: 1.0.0
+  css:
+    base:
+      qs/css/qs-columns.css: {}
+      qs/css/style.css: {}
+  js:
+    qs/js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

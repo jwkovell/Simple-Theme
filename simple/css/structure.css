@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+.layout-container {
+  background: #eee;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.layout-container > header {
+  background: #ccc;
+  padding: 1em;
+}
+
+.layout-container > main {
+  background: #ddd;
+}
+
+.layout-container > main:after {
+  display: block;
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.layout-content {
+  float: left;
+  background: #fff;
+}
+
+.layout-content .content {
+  padding: 1em;
+}
+
+.layout-sidebar-first,
+.layout-sidebar-second {
+  float: left;
+}
+
+.layout-sidebar-first .content,
+.layout-sidebar-second .content {
+  padding: 1em;
+}
+
+#main .layout-content:first-child:nth-last-child(3) {
+  width: 50%;
+  margin-left: 25%;
+}
+
+#main .layout-content:first-child:nth-last-child(3) ~ .layout-sidebar-first {
+  margin-left: -75%;
+  width: 25%;
+}
+
+#main .layout-content:first-child:nth-last-child(3) ~ .layout-sidebar-second {
+  width: 25%;
+}
+
+#main .layout-content:first-child:nth-last-child(2) {
+  width: 75%;
+  margin-left: 25%;
+}
+
+#main .layout-content:first-child:nth-last-child(2) ~ .layout-sidebar-first,
+#main .layout-content:first-child:nth-last-child(2) ~ .layout-sidebar-second {
+  margin-left: -100%;
+  width: 25%;
+}
+
+
+
+

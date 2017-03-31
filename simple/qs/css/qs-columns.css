@@ -1,0 +1,154 @@
+.qs-row:before,
+.qs-row:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.qs-row > .qs-column {
+  float: left;
+}
+
+.qs-row[qs-direction="rtl"] > .qs-column {
+  float: right;
+}
+
+
+/* QS row containing 1 column */
+.qs-row > .qs-column:first-child:nth-last-child(1):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(1):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 100%;
+  float: none;
+}
+
+
+/* QS row containing 2 columns */
+.qs-row > .qs-column:first-child:nth-last-child(2):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(2):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 50%;
+}
+
+
+/* QS row containing 2 columns (one primary) */
+.qs-row > .qs-column[data-qs-primary="true"]:first-child:nth-last-child(2):not([qs-span]) {
+  width: 75%;
+}
+
+.qs-row > .qs-column[data-qs-primary="true"]:first-child:nth-last-child(2):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 25%;
+}
+
+
+/* QS row containing 3 columns */
+.qs-row > .qs-column:first-child:nth-last-child(3):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(3):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: calc(100% / 3);
+}
+
+
+/* QS row containing 3 columns (one primary) */
+.qs-row > .qs-column[data-qs-primary="true"]:first-child:nth-last-child(3):not([qs-span]) {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.qs-row > .qs-column[data-qs-primary="true"]:first-child:nth-last-child(3):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 25%;
+}
+
+.qs-row > .qs-column[data-qs-primary="true"]:first-child:nth-last-child(3):not([qs-span]) ~ .qs-column:not([qs-span]):nth-child(2) {
+  width: 25%;
+  margin-left: -75%;
+}
+
+
+/* QS row containing 4 columns */
+.qs-row > .qs-column:first-child:nth-last-child(4):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(4):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 25%;
+}
+
+
+/* QS row containing 5 columns */
+.qs-row > .qs-column:first-child:nth-last-child(5):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(5):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: 20%;
+}
+
+
+/* QS row containing 6 columns */
+.qs-row > .qs-column:first-child:nth-last-child(6):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(6):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: calc(100% / 6);
+}
+
+
+/* QS row containing 7 columns */
+.qs-row > .qs-column:first-child:nth-last-child(7):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(7):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: calc(100% / 7);
+}
+
+
+/* QS row containing 8 columns */
+.qs-row > .qs-column:first-child:nth-last-child(8):not([qs-span]),
+.qs-row > .qs-column:first-child:nth-last-child(8):not([qs-span]) ~ .qs-column:not([qs-span]) {
+  width: calc(100% / 8);
+}
+
+
+/* QS row containing colums with given span width (percentage) */
+.qs-row > .qs-column[qs-span="100"] {
+  width: 100%;
+  float: none;
+}
+
+.qs-row > .qs-column[qs-span="90"] {
+  width: 90%;
+}
+
+.qs-row > .qs-column[qs-span="80"] {
+  width: 80%;
+}
+
+.qs-row > .qs-column[qs-span="70"] {
+  width: 70%;
+}
+
+.qs-row > .qs-column[qs-span="60"] {
+  width: 60%;
+}
+
+.qs-row > .qs-column[qs-span="50"] {
+  width: 50%;
+}
+
+.qs-row > .qs-column[qs-span="40"] {
+  width: 40%;
+}
+
+.qs-row > .qs-column[qs-span="30"] {
+  width: 30%;
+}
+
+.qs-row > .qs-column[qs-span="20"] {
+  width: 20%;
+}
+
+.qs-row > .qs-column[qs-span="10"] {
+  width: 10%;
+}
+
+.qs-row > .qs-column[qs-span="75"] {
+  width: 75%;
+}
+
+.qs-row > .qs-column[qs-span="25"] {
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+
+
+
+}
