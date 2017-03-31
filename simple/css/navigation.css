@@ -50,3 +50,34 @@
 #main-menu ul li ul li a:hover {
   background-color: #ccc;
 }
+
+@media (max-width: 575px) {
+
+  #main-menu ul:before {
+    display: block;
+    content: "\2630  Menu";
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #ddd;
+  }
+
+  #main-menu ul li {
+    float: none;
+    display: none;
+  }
+
+  #main-menu ul:hover li {
+    display: block;
+  }
+
+  #main-menu ul li a {
+    text-align: center;
+  }
+
+  #main-menu ul li:hover ul {
+    display: none;
+  }
+
+
+}
